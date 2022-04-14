@@ -11,6 +11,7 @@ const methodOverride = require('method-override')
 const indexRouter = require('./routes/index')
 const authorRouter = require('./routes/authors')
 const bookRouter = require('./routes/books')
+const port = Process.env.PORT || 3000 ;
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
